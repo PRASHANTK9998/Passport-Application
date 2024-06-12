@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Page</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Favicons -->
+    <link href="images/favicon.png" rel="icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <style>
+    html,body{
+      background-image: url("assets/img/hero-bg-abstract.jpg");
+    }
+  </style>
+</head>
+<header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="row">
+      <div class="col-5">
+        <div class="container-fluid container-xl position-relative me-5">
+          <a href="index.html" class="logo d-flex align-items-center ms-auto me-auto">
+            <!-- Uncomment the line below if you also wish to use an image logo -->
+            <img src="assets/img/Passport_Flat_Icon_Vector.svg" alt="logo">
+            <h1 class="sitename"><b></b>PassportSeva</b></h1>
+          </a>
+        </div>
+      </div>
+      <div class="col-7">
+        <div class="container-fluid container-xl position-relative d-flex align-items-center">
+          <nav id="navmenu" class="navmenu">
+            <ul>
+              <li><a href="index.html" class="active">Home<br></a></li>
+              <li><a href="feedback.html">feedback</a></li>
+              <li><a href="complaint.html">Raise Complaint</a></li>
+              <nav class="search-bar navbar navbar-light">
+                <div class="container-fluid">
+                  <!-- <form class="d-flex">
+                    <input class=" input-search form-control" type="search" placeholder="Search for the nearest Passport Office" aria-label="Search">
+                    <button class=" search-btn btn btn-outline-primary" type="submit">Search</button>
+                  </form> -->
+                </div>
+              </nav>
+            </ul>
+            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+          </nav>
+        </div>
+      </div>
+    </div>
+   
+   
+  </header>
+<body>
+    <div class="container mt-3 mb-3">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card shadow">
+                    <div class="card-header text-center">
+                        <h4>Submit Your Feedback</h4>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="passportNumber">Passport Number</label>
+                                <input type="text" class="form-control" id="passportNumber" placeholder="Enter your Passport Number" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="fullName">Full Name</label>
+                                <input type="text" class="form-control" id="fullName" placeholder="Enter your Full Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your Email Address" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" class="form-control" id="phone" placeholder="Enter your Phone Number" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="feedbackType">Feedback Type</label>
+                                <select class="form-control" id="feedbackType" required>
+                                    <option value="" disabled selected>Select Feedback Type</option>
+                                    <option value="service">Service Quality</option>
+                                    <option value="staff">Staff Behavior</option>
+                                    <option value="processing">Processing Time</option>
+                                    <option value="facility">Facility Cleanliness</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="rating">Rating</label>
+                                <select class="form-control" id="rating" required>
+                                    <option value="" disabled selected>Select Rating</option>
+                                    <option value="1">1 - Very Poor</option>
+                                    <option value="2">2 - Poor</option>
+                                    <option value="3">3 - Average</option>
+                                    <option value="4">4 - Good</option>
+                                    <option value="5">5 - Excellent</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="feedbackDetails">Feedback Details</label>
+                                <textarea class="form-control" id="feedbackDetails" rows="5" placeholder="Describe your experience in detail" required></textarea>
+                            </div>
+                            <button type="submit" class="login-btn btn-block">Submit Feedback</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer" class="footer">
+        <div class="container copyright text-center mt-4">
+          <p>© <span>Copyright</span> <strong class="px-1 sitename">Passport Seva</strong> <span>All Rights Reserved</span>
+          </p>
+          <div class="credits">
+            Designed by <a href="#">prashant kotalwar</a>
+          </div>
+        </div>
+      </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

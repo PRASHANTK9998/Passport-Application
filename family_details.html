@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <title>Family Details</title>
+        <meta content="" name="description">
+        <meta content="" name="keywords">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+      
+        <!-- Favicons -->
+        <link href="images/favicon.png" rel="icon">
+      
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com" rel="preconnect">
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+      
+        <!-- Vendor CSS Files -->
+        <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+        <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+        <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+        <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+      
+        <!-- Main CSS File -->
+        <link href="assets/css/main.css" rel="stylesheet">
+        <script>
+          const myModal = document.getElementById('myModal')
+        const myInput = document.getElementById('myInput')
+        
+        myModal.addEventListener('shown.bs.modal', () => {
+          myInput.focus()
+        })
+        </script>
+        <style>
+          .nav-link {
+            display: flex;
+            align-items: center;
+          }
+          a.nav-link{
+            font-size: 14px;
+          }
+          .nav-link .badge {
+            margin-right: 10px;
+          }
+          .arrow {
+            margin-left: 10px; /* Adjust the value to add space */
+          }
+        </style>
+      
+      
+      </head>
+
+      <header id="header" class="header d-flex align-items-center sticky-top">
+        <div class="row">
+          <div class="col-5">
+            <div class="container-fluid container-xl position-relative me-5">
+              <a href="index.html" class="logo d-flex align-items-center ms-auto me-5">
+                <!-- Uncomment the line below if you also wish to use an image logo -->
+                <img src="assets/img/Passport_Flat_Icon_Vector.svg" alt="logo">
+                <h1 class="sitename"><b></b>PassportSeva</b></h1>
+              </a>
+            </div>
+          </div>
+          <div class="col-7">
+            <div class="container-fluid container-xl position-relative d-flex align-items-center ms-5">
+              <nav id="navmenu" class="navmenu">
+                <ul>
+                  <li><a href="index.html" class="active">Home<br></a></li>
+                  <li><a href="feedback.html">feedback</a></li>
+                  <li><a href="complaint.html">Raise Complaint</a></li>
+                  <nav class="search-bar navbar navbar-light">
+                    <div class="container-fluid">
+                      <!-- <form class="d-flex">
+                        <input class=" input-search form-control" type="search" placeholder="Search for the nearest Passport Office" aria-label="Search">
+                        <button class=" search-btn btn btn-outline-primary" type="submit">Search</button>
+                      </form> -->
+                    </div>
+                    
+                  </nav>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid d-flex justify-content-end me-5">
+          <a class="btn-getstarted" href="index.html">Logout</a>
+        </div>
+      </header>
+      <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="application_details.html"><span class="badge">1</span>Applicant Details <span class="arrow"><i class="fas fa-chevron-right"></i></span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="family_details.html"><span class="badge">2</span>family Details <span class="arrow"><i class="fas fa-chevron-right"></i></span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="address_details.html"><span class="badge">3</span>Address Details <span class="arrow"><i class="fas fa-chevron-right"></i></span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="emergency_contact_details.html"><span class="badge">4</span>Emergency contact Details <span class="arrow"><i class="fas fa-chevron-right"></i></span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="other_details.html"><span class="badge">5</span>Other Details <span class="arrow"><i class="fas fa-chevron-right"></i></span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="payment_page.html"><span class="badge">6</span>Payment Page <span class="arrow"><i class="fas fa-chevron-right"></i></span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="declaration_page.html"><span class="badge">7</span>Declaration</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="form-section me-5 ms-5 mt-3 p-3 mb-5 border">
+            <h2>Family Details</h2>
+            <hr>
+            <form>
+              <div class="form-row ">
+                <div class="form-group col-md-6">
+                  <label for="fatherName">Father's Given Name (Given Name means First name followed by Middle name)</label>
+                  <input type="text" class="form-control" id="fatherName" placeholder="Enter father's given name" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="fatherSurname">Surname</label>
+                  <input type="text" class="form-control" id="fatherSurname" placeholder="Enter father's surname" required>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="motherName">Mother's Given Name (Given Name means First name followed by Middle name)</label>
+                  <input type="text" class="form-control" id="motherName" placeholder="Enter mother's given name" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="motherSurname">Surname</label>
+                  <input type="text" class="form-control" id="motherSurname" placeholder="Enter mother's surname" required>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="guardianName">Legal Guardian's Given Name (If applicable)</label>
+                  <input type="text" class="form-control" id="guardianName" placeholder="Enter legal guardian's given name">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="guardianSurname">Surname</label>
+                  <input type="text" class="form-control" id="guardianSurname" placeholder="Enter legal guardian's surname">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="spouseName">Spouse's Given Name (Given Name means First name followed by Middle name)</label>
+                  <input type="text" class="form-control" id="spouseName" placeholder="Enter spouse's given name">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="spouseSurname">Surname</label>
+                  <input type="text" class="form-control" id="spouseSurname" placeholder="Enter spouse's surname">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="fatherPassport">Father/ Legal Guardian's File/ Passport Number</label>
+                  <input type="text" class="form-control" id="fatherPassport" placeholder="Enter father's passport number">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="fatherNationality">Father/ Legal Guardian's Nationality, if not Indian</label>
+                  <input type="text" class="form-control" id="fatherNationality" placeholder="Enter father's nationality">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="motherPassport">Mother/ Legal Guardian's File/ Passport Number</label>
+                  <input type="text" class="form-control" id="motherPassport" placeholder="Enter mother's passport number">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="motherNationality">Mother/ Legal Guardian's Nationality, if not Indian</label>
+                  <input type="text" class="form-control" id="motherNationality" placeholder="Enter mother's nationality">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6 d-flex justify-content-start mt-5">
+                    <a class="login-btn btn-getstarted" href="application_details.html">Previous</a>
+                </div>
+                <div class="col-6 d-flex justify-content-end mt-5">
+                    <a class="login-btn btn-getstarted" href="address_details.html">Next</a>
+                </div>
+            </div>
+             
+              
+            </form>
+          </div>
+        
+          <footer id="footer" class="footer">
+            <div class="container copyright text-center mt-4">
+              <p>© <span>Copyright</span> <strong class="px-1 sitename">Passport Seva</strong> <span>All Rights Reserved</span>
+              </p>
+              <div class="credits">
+                Designed by <a href="#">prashant kotalwar</a>
+              </div>
+            </div>
+          </footer>
+      
+  
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      </body>
+</html>

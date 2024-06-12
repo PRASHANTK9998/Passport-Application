@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <title>Applicant Details</title>
+        <meta content="" name="description">
+        <meta content="" name="keywords">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+      
+        <!-- Favicons -->
+        <link href="images/favicon.png" rel="icon">
+      
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com" rel="preconnect">
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+      
+        <!-- Vendor CSS Files -->
+        <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+        <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+        <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+        <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+      
+        <!-- Main CSS File -->
+        <link href="assets/css/main.css" rel="stylesheet">
+        <script>
+          const myModal = document.getElementById('myModal')
+        const myInput = document.getElementById('myInput')
+        
+        myModal.addEventListener('shown.bs.modal', () => {
+          myInput.focus()
+        })
+        </script>
+        <style>
+          .nav-link {
+            display: flex;
+            align-items: center;
+          }
+          a.nav-link{
+            font-size: 14px;
+          }
+          .nav-link .badge {
+            margin-right: 10px;
+          }
+          .arrow {
+            margin-left: 10px; /* Adjust the value to add space */
+          }
+        </style>
+      
+      
+      </head>
+
+      <header id="header" class="header d-flex align-items-center sticky-top">
+        <div class="row">
+          <div class="col-5">
+            <div class="container-fluid container-xl position-relative me-5">
+              <a href="index.html" class="logo d-flex align-items-center ms-auto me-5">
+                <!-- Uncomment the line below if you also wish to use an image logo -->
+                <img src="assets/img/Passport_Flat_Icon_Vector.svg" alt="logo">
+                <h1 class="sitename"><b></b>PassportSeva</b></h1>
+              </a>
+            </div>
+          </div>
+          <div class="col-7">
+            <div class="container-fluid container-xl position-relative d-flex align-items-center ms-5">
+              <nav id="navmenu" class="navmenu">
+                <ul>
+                  <li><a href="index.html" class="active">Home<br></a></li>
+                  <li><a href="feedback.html">feedback</a></li>
+                  <li><a href="complaint.html">Raise Complaint</a></li>
+                  <nav class="search-bar navbar navbar-light">
+                    <div class="container-fluid">
+                      <!-- <form class="d-flex">
+                        <input class=" input-search form-control" type="search" placeholder="Search for the nearest Passport Office" aria-label="Search">
+                        <button class=" search-btn btn btn-outline-primary" type="submit">Search</button>
+                      </form> -->
+                    </div>
+                    
+                  </nav>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid d-flex justify-content-end me-5">
+          <a class="btn-getstarted" href="index.html">Logout</a>
+        </div>
+      </header>
+      <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="application_details.html"><span class="badge">1</span>Applicant Details <span class="arrow"><i class="fas fa-chevron-right"></i></span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="family_details.html"><span class="badge">2</span>family Details <span class="arrow"><i class="fas fa-chevron-right"></i></span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="address_details.html"><span class="badge">3</span>Address Details <span class="arrow"><i class="fas fa-chevron-right"></i></span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="emergency_contact_details.html"><span class="badge">4</span>Emergency contact Details <span class="arrow"><i class="fas fa-chevron-right"></i></span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="other_details.html"><span class="badge">5</span>Other Details <span class="arrow"><i class="fas fa-chevron-right"></i></span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="payment_page.html"><span class="badge">6</span>Payment Page <span class="arrow"><i class="fas fa-chevron-right"></i></span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="declaration_page.html"><span class="badge">7</span>Declaration</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="form-section me-5 ms-5 mt-3 p-3 mb-5 border">
+          <h2>Applicant Details</h2>
+          <hr>
+          <form>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="givenName">Applicant's Given Name</label>
+                <input type="text" class="form-control" id="givenName" placeholder="Enter given name" required>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="surname">Surname</label>
+                <input type="text" class="form-control" id="surname" placeholder="Enter surname" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label>Are you known by any other names (aliases)?</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="alias" id="aliasYes" value="yes">
+                  <label class="form-check-label" for="aliasYes">Yes</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="alias" id="aliasNo" value="no" checked>
+                  <label class="form-check-label" for="aliasNo">No</label>
+                </div>
+              </div>
+              <div class="form-group col-md-6">
+                <label>Have you ever changed your name?</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="changedName" id="changedNameYes" value="yes">
+                  <label class="form-check-label" for="changedNameYes">Yes</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="changedName" id="changedNameNo" value="no" checked>
+                  <label class="form-check-label" for="changedNameNo">No</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="dob">Date of Birth (DD-MM-YYYY)</label>
+                <input type="date" class="form-control" id="dob" required>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="placeOfBirth">Place of Birth (Village or Town or City)</label>
+                <input type="text" class="form-control" id="placeOfBirth" placeholder="Enter place of birth" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="district">District (If born in India)</label>
+                <input type="text" class="form-control" id="district" placeholder="Enter district" required>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="state">State/UT (If born in India)</label>
+                <input type="text" class="form-control" id="state" placeholder="Enter state/UT" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="region">Country (If born abroad)</label>
+                <input type="text" class="form-control" id="region" placeholder="Enter country" required>
+              </div>
+              <div class="form-group col-md-6">
+                <label>1.6 Gender</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gender" id="male" value="male" required>
+                  <label class="form-check-label" for="male">Male</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gender" id="female" value="female" required>
+                  <label class="form-check-label" for="female">Female</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gender" id="transgender" value="transgender" required>
+                  <label class="form-check-label" for="transgender">Transgender</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label>Marital Status</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="maritalStatus" id="single" value="single" required>
+                  <label class="form-check-label" for="single">Single</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="maritalStatus" id="married" value="married" required>
+                  <label class="form-check-label" for="married">Married</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="maritalStatus" id="divorced" value="divorced" required>
+                  <label class="form-check-label" for="divorced">Divorced</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="maritalStatus" id="widowed" value="widowed" required>
+                  <label class="form-check-label" for="widowed">Widow/Widower</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="maritalStatus" id="separated" value="separated" required>
+                  <label class="form-check-label" for="separated">Separated</label>
+                </div>
+              </div>
+              <div class="form-group col-md-6">
+                <label>Citizenship of India by</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="citizenship" id="birth" value="birth" required>
+                  <label class="form-check-label" for="birth">Birth</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="citizenship" id="descent" value="descent" required>
+                  <label class="form-check-label" for="descent">Descent</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="citizenship" id="registration" value="registration" required>
+                  <label class="form-check-label" for="registration">Registration/Naturalization</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="pan">PAN (If available)</label>
+                <input type="text" class="form-control" id="pan" placeholder="Enter PAN number">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="voterId">Voter ID (If available)</label>
+                <input type="text" class="form-control" id="voterId" placeholder="Enter Voter ID">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label>Employment Type</label>
+                <select class="form-control" id="employmentType" required>
+                  <option value="" disabled selected>Select employment type</option>
+                  <option value="psu">PSU</option>
+                  <option value="government">Government</option>
+                  <option value="statutoryBody">Statutory Body</option>
+                  <option value="retiredGovernment">Retired Government Servant</option>
+                  <option value="selfEmployed">Self Employed</option>
+                  <option value="private">Private</option>
+                  <option value="homemaker">Homemaker</option>
+                  <option value="notEmployed">Not Employed</option>
+                  <option value="retiredPrivate">Retired-Private Service</option>
+                  <option value="student">Student</option>
+                  <option value="others">Others</option>
+                  <option value="ciifacci">Owners, Partners & Directors of companies which are members of CII, FICCI & ASSOCHAM</option>
+                </select>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="organization">If employed in Government/ Statutory Body/ PSU, specify organization name</label>
+                <input type="text" class="form-control" id="organization" placeholder="Enter organization name">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label>Is either of your parent (in case of minor)/ spouse, a government servant?</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="govServant" id="govServantYes" value="yes">
+                  <label class="form-check-label" for="govServantYes">Yes</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="govServant" id="govServantNo" value="no" checked>
+                  <label class="form-check-label" for="govServantNo">No</label>
+                </div>
+              </div>
+              <div class="form-group col-md-6">
+                <label>Educational Qualification</label>
+                <select class="form-control" id="education" required>
+                  <option value="" disabled selected>Select qualification</option>
+                  <option value="7th">7th pass or less</option>
+                  <option value="8th9th">Between 8th and 9th Standard</option>
+                  <option value="10th">10th pass and above</option>
+                  <option value="graduate">Graduate and above</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label>Are you eligible for Non-ECR category?</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="nonECR" id="nonECRYes" value="yes">
+                  <label class="form-check-label" for="nonECRYes">Yes</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="nonECR" id="nonECRNo" value="no" checked>
+                  <label class="form-check-label" for="nonECRNo">No</label>
+                </div>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="distinguishingMark">Visible Distinguishing Mark</label>
+                <input type="text" class="form-control" id="distinguishingMark" placeholder="Enter distinguishing mark" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="aadhaar">Aadhaar Number</label>
+                <input type="text" class="form-control" id="aadhaar" placeholder="Enter Aadhaar number" required>
+              </div>
+            </div>
+            <div class = "d-flex justify-content-end me-5 mt-5">
+              <a class=" login-btn btn-getstarted" href="family_details.html">Next</a>
+            </div>
+            
+          </form>
+        </div>
+        <footer id="footer" class="footer">
+          <div class="container copyright text-center mt-4">
+            <p>© <span>Copyright</span> <strong class="px-1 sitename">Passport Seva</strong> <span>All Rights Reserved</span>
+            </p>
+            <div class="credits">
+              Designed by <a href="#">prashant kotalwar</a>
+            </div>
+          </div>
+        </footer>
+      
+  
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      </body>
+</html>
